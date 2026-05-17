@@ -1,10 +1,10 @@
 # RU MorphLib 0.6.14b
 
-RU MorphLib - развивающаяся модульная библиотека русской морфологии для локализации Starsector и различных модификаций.
-
-Мод нужен переводчикам и авторам русификаций. Он не переводит текст сам, а даёт безопасные токены и API, чтобы в `rules.csv`, диалогах и JAR/UI-коде нормально работали русский род, падежи, обращения к игроку и формы чисел.
+RU MorphLib - библиотека русской морфологии для переводов Starsector.
 
 Автор: Lasplagas.
+
+Мод нужен переводчикам и авторам русификаций. Он не переводит текст сам, а даёт безопасные токены и API, чтобы в `rules.csv`, диалогах и JAR/UI-коде нормально работали русский род, падежи, обращения к игроку и формы чисел.
 
 ## Что нового в 0.6.14b
 
@@ -16,99 +16,17 @@ RU MorphLib - развивающаяся модульная библиотека
 
 ## Что мод умеет сейчас
 
-### NPC, пленники, офицеры, контакты
-
-Слой: `$rulm_*`
-
-Для текущего NPC, пленника, офицера, контакта или собеседника. Используется для рода, падежей и слов вроде `пленник/пленница`, `парень/девушка`, `мужчина/женщина`.
-
-Примеры:
-
-```text
-$rulm_thisNom
-$rulm_prisonerNom
-$rulm_himAcc
-$rulm_himAfterPrepGen
-```
-
-### Игрок и обращение
-
-Слой: `$rulp_*`
-
-Для выбранного обращения к игроку: `Сэр`, `Мэм`, `Капитан`. Режим `Капитан` даёт нейтральные direct-address формы без привязки к полу.
-
-Примеры:
-
-```text
-$rulp_Address
-$rulp_youNom
-$rulp_arrivedDirect
-```
-
-### Полные слова после чисел
-
-Слой: `$ruln_num_*`
-
-Для случаев, когда число известно прямо в токене.
-
-Пример:
-
-```text
-$ruln_num_5_credit -> кредитов
-```
-
-### Ресурсы игрока
-
-Слой: `$ruln_player*`
-
-Для реальных ресурсов игрока: кредиты, топливо, припасы, экипаж, морпехи, тяжёлая техника.
-
-Примеры:
-
-```text
-$ruln_playerCreditsValue
-$ruln_playerCredits_credit
-```
-
-### Memory-числа и диалоговые переменные
-
-Слой: `$ruln_mem_*`
-
-Для чисел, которые лежат в memory/dialogue variable.
-
-Пример:
-
-```text
-$coff_ransomprice_text $ruln_mem_coff_ransomprice_credit
-```
-
-### Динамические окончания
-
-Слои: `$ruln_suf_mem_*`, `$ruln_suf_player_*`
-
-Для случаев, когда число уже красиво отформатировано игрой или модом, а RU MorphLib должен дать только окончание или хвост слова.
-
-Пример:
-
-```text
-$price_text кредит$ruln_suf_mem_price__blank__a__ov
-```
-
-### Java/Kotlin/JAR/UI-код
-
-API: `RuMorphQuantity`
-
-Для модов, которым нужно вызывать морфологию из кода.
-
-Пример:
-
-```java
-RuMorphQuantity.word(amount, "credit")
-```
+| Задача переводчика | Слой | Пример |
+|---|---|---|
+| Текущий NPC, пленник, офицер, контакт, собеседник | `$rulm_*` | `$rulm_thisNom`<br>`$rulm_prisonerNom` |
+| Игрок и выбранное обращение `Сэр/Мэм/Капитан` | `$rulp_*` | `$rulp_Address`<br>`$rulp_youNom`<br>`$rulp_arrivedDirect` |
+| Полное слово после числа прямо в токене | `$ruln_num_*` | `$ruln_num_5_credit` -> `кредитов` |
+| Полное слово для ресурса игрока | `$ruln_player*` | `$ruln_playerCreditsValue`<br>`$ruln_playerCredits_credit` |
+| Полное слово для числа из memory/dialogue variable | `$ruln_mem_*` | `$coff_ransomprice_text`<br>`$ruln_mem_coff_ransomprice_credit` |
+| Только окончание/хвост слова для динамического числа | `$ruln_suf_mem_*`<br>`$ruln_suf_player_*` | `$price_text кредит...`<br>`$ruln_suf_mem_price__blank__a__ov` |
+| Java/Kotlin/JAR/UI-код | `RuMorphQuantity` | `RuMorphQuantity.word(amount, "credit")` |
 
 ## Быстрый пример
-
-Строка в переводе:
 
 ```text
 $rulm_GuyOrGirlNom молча смотрит в пол. Конвой ведёт $rulm_himAcc к шаттлу.
@@ -129,49 +47,28 @@ $rulm_GuyOrGirlNom молча смотрит в пол. Конвой ведёт 
 
 | Токен | Мужская форма | Женская форма | Когда использовать |
 |---|---|---|---|
-| `$rulm_himAfterPrepGen` | `него` | `неё` | после предлогов с родительным: `для`, `без`, `от`, `у`, `ради` |
-| `$rulm_himAfterPrepAcc` | `него` | `неё` | после предлогов с винительным: `в`, `на`, `за`, `через` |
-| `$rulm_himAfterPrepDat` | `нему` | `ней` | после `к`, иногда `по` |
-| `$rulm_himAfterPrepIns` | `ним` | `ней` | после `с`, `перед`, `над`, `за` |
-| `$rulm_himAfterPrepPrep` | `нём` | `ней` | после `о`, `в`, `на`, `при` |
-
-## Готовые формы с частыми предлогами
-
-Эти токены уже содержат предлог внутри себя. Используйте их, если предлог не написан отдельно в строке.
-
-| Токен | Результат |
-|---|---|
-| `$rulm_forHim` | `для него / для неё` |
-| `$rulm_toHim` | `к нему / к ней` |
-| `$rulm_withHim` | `с ним / с ней` |
-| `$rulm_aboutHim` | `о нём / о ней` |
-| `$rulm_fromHim` | `от него / от неё` |
-| `$rulm_withoutHim` | `без него / без неё` |
-| `$rulm_throughHim` | `через него / через неё` |
+| `$rulm_himAfterPrepGen` | него | неё | после предлогов с родительным: `для`, `без`, `от`, `у`, `ради` |
+| `$rulm_himAfterPrepAcc` | него | неё | после предлогов с винительным: `в`, `на`, `за`, `через` |
+| `$rulm_himAfterPrepDat` | нему | ней | после `к`, иногда `по` |
+| `$rulm_himAfterPrepIns` | ним | ней | после `с`, `перед`, `над`, `за` |
+| `$rulm_himAfterPrepPrep` | нём | ней | после `о`, `в`, `на`, `при` |
 
 ## Токены 0.6.14a
 
-### Парень / девушка
-
-| Падеж | Нижний регистр | Верхний регистр | Мужская форма | Женская форма |
+| Назначение | Нижний регистр | Верхний регистр | Мужская форма | Женская форма |
 |---|---|---|---|---|
-| Именительный | `$rulm_guyOrGirlNom` | `$rulm_GuyOrGirlNom` | парень | девушка |
-| Родительный | `$rulm_guyOrGirlGen` | `$rulm_GuyOrGirlGen` | парня | девушки |
-| Дательный | `$rulm_guyOrGirlDat` | `$rulm_GuyOrGirlDat` | парню | девушке |
-| Винительный | `$rulm_guyOrGirlAcc` | `$rulm_GuyOrGirlAcc` | парня | девушку |
-| Творительный | `$rulm_guyOrGirlIns` | `$rulm_GuyOrGirlIns` | парнем | девушкой |
-| Предложный | `$rulm_guyOrGirlPrep` | `$rulm_GuyOrGirlPrep` | парне | девушке |
-
-### Мужчина / женщина
-
-| Падеж | Нижний регистр | Верхний регистр | Мужская форма | Женская форма |
-|---|---|---|---|---|
-| Именительный | `$rulm_manOrWomanNom` | `$rulm_ManOrWomanNom` | мужчина | женщина |
-| Родительный | `$rulm_manOrWomanGen` | `$rulm_ManOrWomanGen` | мужчины | женщины |
-| Дательный | `$rulm_manOrWomanDat` | `$rulm_ManOrWomanDat` | мужчине | женщине |
-| Винительный | `$rulm_manOrWomanAcc` | `$rulm_ManOrWomanAcc` | мужчину | женщину |
-| Творительный | `$rulm_manOrWomanIns` | `$rulm_ManOrWomanIns` | мужчиной | женщиной |
-| Предложный | `$rulm_manOrWomanPrep` | `$rulm_ManOrWomanPrep` | мужчине | женщине |
+| парень/девушка, им. | `$rulm_guyOrGirlNom` | `$rulm_GuyOrGirlNom` | парень | девушка |
+| парень/девушка, род. | `$rulm_guyOrGirlGen` | `$rulm_GuyOrGirlGen` | парня | девушки |
+| парень/девушка, дат. | `$rulm_guyOrGirlDat` | `$rulm_GuyOrGirlDat` | парню | девушке |
+| парень/девушка, вин. | `$rulm_guyOrGirlAcc` | `$rulm_GuyOrGirlAcc` | парня | девушку |
+| парень/девушка, твор. | `$rulm_guyOrGirlIns` | `$rulm_GuyOrGirlIns` | парнем | девушкой |
+| парень/девушка, предл. | `$rulm_guyOrGirlPrep` | `$rulm_GuyOrGirlPrep` | парне | девушке |
+| мужчина/женщина, им. | `$rulm_manOrWomanNom` | `$rulm_ManOrWomanNom` | мужчина | женщина |
+| мужчина/женщина, род. | `$rulm_manOrWomanGen` | `$rulm_ManOrWomanGen` | мужчины | женщины |
+| мужчина/женщина, дат. | `$rulm_manOrWomanDat` | `$rulm_ManOrWomanDat` | мужчине | женщине |
+| мужчина/женщина, вин. | `$rulm_manOrWomanAcc` | `$rulm_ManOrWomanAcc` | мужчину | женщину |
+| мужчина/женщина, твор. | `$rulm_manOrWomanIns` | `$rulm_ManOrWomanIns` | мужчиной | женщиной |
+| мужчина/женщина, предл. | `$rulm_manOrWomanPrep` | `$rulm_ManOrWomanPrep` | мужчине | женщине |
 
 ## С чего начать переводчику
 
