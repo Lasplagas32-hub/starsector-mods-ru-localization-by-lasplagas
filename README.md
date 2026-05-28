@@ -23,13 +23,13 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 
 | Проект | Версия оригинального мода | Статус | Где скачать |
 |---|---:|---|---|
-| **UAF / United Aurora Federation** | `0.84b` | рабочая версия, возможны v2-polish правки | [релиз UAF](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/uaf-v2.1.5b-p10) |
+| **UAF / United Aurora Federation** | `0.8.4c` | рабочая версия, ручная редактура продолжается, требуется RU MorphLib | [релиз UAF](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/uaf-0.8.4c-ru) |
 | **Nexerelin** | `0.12.1e` | рабочая версия | [релиз Nexerelin](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/nexerelin-ru-0.12.1e-v1.0) |
 | **Random Assortment of Things / RAT** | `3.3.1` | рабочая версия, JAR techfix включён | [релиз RAT](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/rat-ru-3.3.1) |
 | **Combat Chatter** | `1.15.2` | рабочая версия | [релиз Combat Chatter](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/combat-chatter-1.15.2-ru-v2.5a) |
 | **Unknown Skies** | `3.0.3` | тестовая версия | [релиз Unknown Skies](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/Unknown-Skies) |
 | **Take No Prisoners** | `0.17.1` | рабочая версия, требуется RU MorphLib | [релиз Take No Prisoners](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/Take-No-Prisoners-0.17.1) |
-| **RU MorphLib** | `0.6.14b` | библиотека для переводчиков и модов | [релиз RU MorphLib](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/v0.6.14b) |
+| **RU MorphLib** | `0.6.15a` | библиотека для переводчиков и модов | [релиз RU MorphLib](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/ru-morphlib) |
 
 ## Важно: это не полные моды
 
@@ -77,7 +77,7 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 Он не переводит моды автоматически.  
 Это инструмент для переводчиков и моддеров, который помогает согласовывать русские строки по роду, падежу и числу.
 
-Сейчас RU MorphLib используется в переводе **Take No Prisoners** и может использоваться в будущих переводах, где нужны динамические формы:
+Сейчас RU MorphLib используется в переводах **UAF / United Aurora Federation** и **Take No Prisoners**, а также может использоваться в будущих переводах, где нужны динамические формы:
 
 - род и падеж текущего NPC;
 - обращение к игроку;
