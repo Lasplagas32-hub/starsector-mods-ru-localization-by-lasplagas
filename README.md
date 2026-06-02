@@ -24,6 +24,7 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 | Проект | Версия оригинального мода | Статус | Где скачать |
 |---|---:|---|---|
 | **UAF / United Aurora Federation** | `0.8.4c` | рабочая версия, ручная редактура продолжается, требуется RU MorphLib | [релиз UAF](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/uaf-0.8.4c-ru) |
+| **Iron Shell** | `1.183.5b` | рабочая версия, полный локализованный архив мода | [релиз Iron Shell](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/iron-shell-1.183.5b-ru) |
 | **Nexerelin** | `0.12.1e` | рабочая версия | [релиз Nexerelin](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/nexerelin-ru-0.12.1e-v1.0) |
 | **Random Assortment of Things / RAT** | `3.3.1` | рабочая версия, JAR techfix включён | [релиз RAT](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/rat-ru-3.3.1) |
 | **Combat Chatter** | `1.15.2` | рабочая версия | [релиз Combat Chatter](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/combat-chatter-1.15.2-ru-v2.5a) |
