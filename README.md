@@ -2,7 +2,7 @@
 
 Неофициальный репозиторий русификаций модов для **Starsector**.
 
-Здесь собраны мои переводы модов Starsector, которые я делаю, тестирую и постепенно улучшаю.  
+Здесь собраны мои переводы модов Starsector, которые я делаю, тестирую и постепенно улучшаю.
 Часть переводов является обычными localization-only архивами, часть использует **RU MorphLib** - отдельную библиотеку для русской морфологии в диалогах и интерфейсе.
 
 ## Скачать готовые переводы
@@ -13,25 +13,26 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 
 Откройте нужный релиз и скачайте `.zip`-архив из блока **Assets**.
 
-**Не используйте кнопку `Code → Download ZIP` для установки переводов.**  
+**Не используйте кнопку `Code → Download ZIP` для установки переводов.**
 Она скачивает весь репозиторий целиком, а не готовый архив конкретной русификации.
 
-Папки в репозитории содержат README, описание, заметки и документацию.  
+Папки в репозитории содержат README, описание, заметки и документацию.
 Для установки нужны именно архивы из **Releases → Assets**.
 
 ## Доступные переводы
 
-| Проект | Версия оригинального мода | Статус | Где скачать |
-|---|---:|---|---|
-| **UAF / United Aurora Federation** | `0.8.4c` | рабочая версия, ручная редактура продолжается, требуется RU MorphLib | [релиз UAF](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/uaf-0.8.4c-ru) |
-| **Secrets of the Frontier / SOTF** | `0.15.1` | рабочая версия, localization-only, JAR visible text patch включён | [релиз SOTF](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/sotf-0.15.1-ru-v1.0) |
-| **Iron Shell** | `1.183.5b` | рабочая версия, полный локализованный архив мода | [релиз Iron Shell](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/iron-shell-1.183.5b-ru) |
-| **Nexerelin** | `0.12.1e` | рабочая версия | [релиз Nexerelin](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/nexerelin-ru-0.12.1e-v1.0) |
-| **Random Assortment of Things / RAT** | `3.3.1` | рабочая версия, JAR techfix включён | [релиз RAT](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/rat-ru-3.3.1) |
-| **Combat Chatter** | `1.15.2` | рабочая версия | [релиз Combat Chatter](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/combat-chatter-1.15.2-ru-v2.5a) |
-| **Unknown Skies** | `3.0.3` | тестовая версия | [релиз Unknown Skies](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/Unknown-Skies) |
-| **Take No Prisoners** | `0.17.1` | рабочая версия, требуется RU MorphLib | [релиз Take No Prisoners](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/Take-No-Prisoners-0.17.1) |
-| **RU MorphLib** | `0.6.15a` | библиотека для переводчиков и модов | [релиз RU MorphLib](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/ru-morphlib) |
+| Проект                                | Версия оригинального мода | Статус                                                               | Где скачать                                                                                                                                         |
+| ------------------------------------- | ------------------------: | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Industrial.Evolution**              |                   `4.1.b` | рабочая версия, localization-only, JAR visible text patch включён    | [релиз Industrial.Evolution](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/indevo-4.1.b-ru-v1.0)     |
+| **UAF / United Aurora Federation**    |                  `0.8.4c` | рабочая версия, ручная редактура продолжается, требуется RU MorphLib | [релиз UAF](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/uaf-0.8.4c-ru)                             |
+| **Secrets of the Frontier / SOTF**    |                  `0.15.1` | рабочая версия, localization-only, JAR visible text patch включён    | [релиз SOTF](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/sotf-0.15.1-ru-v1.0)                      |
+| **Iron Shell**                        |                `1.183.5b` | рабочая версия, полный локализованный архив мода                     | [релиз Iron Shell](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/iron-shell-1.183.5b-ru)             |
+| **Nexerelin**                         |                 `0.12.1e` | рабочая версия                                                       | [релиз Nexerelin](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/nexerelin-ru-0.12.1e-v1.0)           |
+| **Random Assortment of Things / RAT** |                   `3.3.1` | рабочая версия, JAR techfix включён                                  | [релиз RAT](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/rat-ru-3.3.1)                              |
+| **Combat Chatter**                    |                  `1.15.2` | рабочая версия                                                       | [релиз Combat Chatter](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/combat-chatter-1.15.2-ru-v2.5a) |
+| **Unknown Skies**                     |                   `3.0.3` | тестовая версия                                                      | [релиз Unknown Skies](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/Unknown-Skies)                   |
+| **Take No Prisoners**                 |                  `0.17.1` | рабочая версия, требуется RU MorphLib                                | [релиз Take No Prisoners](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/Take-No-Prisoners-0.17.1)    |
+| **RU MorphLib**                       |                 `0.6.15a` | библиотека для переводчиков и модов                                  | [релиз RU MorphLib](https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/releases/tag/ru-morphlib)                       |
 
 ## Важно: это не полные моды
 
@@ -51,7 +52,7 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 
 Не удаляйте папку оригинального мода и не заменяйте её папкой из архива русификации.
 
-Если после установки в папке мода остались только файлы перевода, мод установлен неправильно.  
+Если после установки в папке мода остались только файлы перевода, мод установлен неправильно.
 Игра может видеть такой мод в лаунчере, но вылетать при запуске из-за отсутствующих оригинальных файлов.
 
 На macOS будьте особенно внимательны: если Finder предлагает полностью заменить папку, не соглашайтесь. Нужно именно объединить содержимое папок или вручную скопировать файлы русификации внутрь уже установленного оригинального мода.
@@ -60,14 +61,14 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 
 У каждого мода здесь свой отдельный релиз.
 
-Метка **Latest** на GitHub не означает, что это единственный актуальный перевод всего репозитория.  
+Метка **Latest** на GitHub не означает, что это единственный актуальный перевод всего репозитория.
 Если нужен конкретный мод, открывайте его релиз из таблицы выше или общий раздел **Releases**.
 
 ## Статус переводов
 
 Переводы могут быть не финальными.
 
-Даже если архив помечен как рабочий или финальный, это означает только то, что он прошёл доступную мне проверку и тестирование.  
+Даже если архив помечен как рабочий или финальный, это означает только то, что он прошёл доступную мне проверку и тестирование.
 Некоторые редкие ветки, скрытые события, квестовые варианты, особые условия, JAR-строки или hardcoded-элементы могут быть не проверены полностью.
 
 Если в игре встретился английский текст, странная фраза, ошибка падежа, обрывок строки или техническая проблема, перевод может быть улучшен в следующих версиях.
@@ -76,16 +77,16 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 
 **RU MorphLib** - отдельная библиотека для русской морфологии в переводах Starsector.
 
-Он не переводит моды автоматически.  
+Он не переводит моды автоматически.
 Это инструмент для переводчиков и моддеров, который помогает согласовывать русские строки по роду, падежу и числу.
 
 Сейчас RU MorphLib используется в переводах **UAF / United Aurora Federation** и **Take No Prisoners**, а также может использоваться в будущих переводах, где нужны динамические формы:
 
-- род и падеж текущего NPC;
-- обращение к игроку;
-- формы слов после чисел;
-- окончания для dynamic sources;
-- Public Quantity API для Java/Kotlin/JAR/UI-кода.
+* род и падеж текущего NPC;
+* обращение к игроку;
+* формы слов после чисел;
+* окончания для dynamic sources;
+* Public Quantity API для Java/Kotlin/JAR/UI-кода.
 
 Если перевод требует RU MorphLib, это отдельно указано в релизе.
 
@@ -97,15 +98,15 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 
 Работа обычно включает:
 
-- разбор структуры мода;
-- отделение видимого текста от технических ID, путей, ключей и скриптов;
-- сверку с оригинальными файлами;
-- сохранение структуры CSV/JSON/rules.csv/JAR;
-- ручную редактуру спорных строк;
-- проверку терминологии Starsector;
-- тестирование в игре насколько это возможно;
-- выпуск hotfix-обновлений по найденным ошибкам;
-- пост-релизная ручная редактура.
+* разбор структуры мода;
+* отделение видимого текста от технических ID, путей, ключей и скриптов;
+* сверку с оригинальными файлами;
+* сохранение структуры CSV/JSON/rules.csv/JAR;
+* ручную редактуру спорных строк;
+* проверку терминологии Starsector;
+* тестирование в игре насколько это возможно;
+* выпуск hotfix-обновлений по найденным ошибкам;
+* пост-релизная ручная редактура.
 
 Итоговые решения, стиль, правки и проверка в игре выполняются под моим контролем.
 
@@ -113,7 +114,7 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 
 Переводы выполнены **Lasplagas**.
 
-Это неофициальные фанатские русификации.  
+Это неофициальные фанатские русификации.
 Я не являюсь автором оригинальных модов и не претендую на права их содержимого.
 
 Для работы каждой русификации требуется установленный оригинальный мод соответствующей версии.
@@ -128,13 +129,13 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 
 Минимально полезный отчёт:
 
-- название перевода и версия архива;
-- версия оригинального мода;
-- версия Starsector;
-- список установленных модов или подтверждение, что проверка была без сторонних конфликтующих модов;
-- скриншот проблемы;
-- по возможности `starsector.log`;
-- описание, где именно встретился текст или ошибка.
+* название перевода и версия архива;
+* версия оригинального мода;
+* версия Starsector;
+* список установленных модов или подтверждение, что проверка была без сторонних конфликтующих модов;
+* скриншот проблемы;
+* по возможности `starsector.log`;
+* описание, где именно встретился текст или ошибка.
 
 Поддержка не гарантируется, если у пользователя установлены другие моды, которые меняют те же файлы, диалоги, фракции, рынки, интерфейс, скрипты или поведение игры.
 
@@ -144,10 +145,10 @@ https://github.com/Lasplagas32-hub/starsector-mods-ru-localization-by-lasplagas/
 
 Если автор мода обновил файлы, старый перевод может:
 
-- не примениться полностью;
-- откатить часть новых строк;
-- вызвать смешение русского и английского текста;
-- сломать отдельные диалоги или интерфейсные элементы;
-- в редких случаях вызвать ошибку загрузки, если изменилась структура файлов.
+* не примениться полностью;
+* откатить часть новых строк;
+* вызвать смешение русского и английского текста;
+* сломать отдельные диалоги или интерфейсные элементы;
+* в редких случаях вызвать ошибку загрузки, если изменилась структура файлов.
 
 Перед установкой проверяйте, что версия оригинального мода совпадает с версией, указанной в релизе перевода.
